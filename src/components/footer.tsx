@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { Clock } from "./clock";
 
 export function Footer() {
   return (
     <footer className="bg-foreground border-t border-paragraph/7">
       <div className="max-w-5xl mx-auto p-12 flex flex-col-reverse sm:flex-col gap-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-start">
+        <div className="grid grid-cols-2 gap-8 mx-auto sm:mx-0 sm:grid-cols-4 md:flex justify-between">
           <div className="flex flex-col gap-3">
             <h3 className="font-bold">Index</h3>
             <ul className="flex flex-col gap-2">
@@ -161,12 +162,8 @@ export function Footer() {
         <div className="border-t border-b border-t-paragraph/10 py-10 border-b-paragraph/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col gap-4 sm:flex-row items-center justify-between w-full">
             <p className="font-semibold">* Currently working</p>
-            <span className="text-8xl text-paragraph/70">
-              {new Date().getHours()}:
-              {new Date().getMinutes() < 10
-                ? `0${new Date().getMinutes()}`
-                : new Date().getMinutes()}
-            </span>
+
+            <Clock />
           </div>
         </div>
 

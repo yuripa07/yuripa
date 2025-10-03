@@ -7,26 +7,20 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="flex">
-      {/* <aside className="w-64 bg-foreground border-r min-h-screen border-paragraph/10 p-6 hidden md:flex flex-col items-center gap-8">
-        oi
-      </aside> */}
+    <>
+      <main className="font-sans max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-24 flex flex-col gap-10 md:gap-18">
+        <HeroSection />
 
-      <div className="w-full">
-        <main className="font-sans max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-24 flex flex-col gap-10 md:gap-18">
-          <HeroSection />
+        <ProjectsSection />
 
-          <ProjectsSection />
+        <ServicesSection />
 
-          <ServicesSection />
+        <NotesSection />
 
-          <NotesSection />
+        <PlaylistSection />
+      </main>
 
-          <PlaylistSection />
-        </main>
-
-        <Footer />
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 }
