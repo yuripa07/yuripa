@@ -1,5 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Clarity from "@microsoft/clarity";
 
 import type { Metadata } from "next";
 import { Ubuntu_Sans } from "next/font/google";
@@ -21,6 +22,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  if (typeof window !== "undefined") {
+    const projectId = "tkk6cu6lj7";
+    Clarity.init(projectId);
+  }
+
   return (
     <html lang="en">
       <body className={`${ubuntuSans.variable} min-h-screen antialiased`}>
