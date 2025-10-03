@@ -13,17 +13,8 @@
   --color-paragraph: var(--paragraph);
   --color-button-primary: var(--button-primary);
   --font-sans: var(--font-ubuntu-sans);
-  /* --font-mono: var(--font-geist-mono); */
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: oklch(14.5% 0 0);
-    --foreground: oklch(20.5% 0 0);
-    --paragraph: oklch(97% 0 0);
-    --button-primary: oklch(20.5% 0 0);
-  }
-} */
 :root.dark,
 .dark :root {
   --background: oklch(14.5% 0 0);

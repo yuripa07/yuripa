@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Clock } from "./clock";
 import { CurrentlyStatus } from "./currently-status";
+import { ThemeSelector } from "./theme-selector";
 
 export function Footer() {
   return (
@@ -84,7 +85,7 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col gap-3">
-            <h3 className="font-bold">Social</h3>
+            <h3 className="font-bold">Contact</h3>
             <ul className="flex flex-col gap-2">
               <li>
                 <Link
@@ -167,7 +168,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 sm:flex-row items-center justify-between text-paragraph/45 text-sm">
+        <div className="flex flex-col-reverse gap-8 sm:flex-row items-center justify-between text-paragraph/45 text-sm">
           <Link
             href="https://www.youtube.com/watch?v=dJ-Px0dZH8A"
             target="_blank"
@@ -177,12 +178,16 @@ export function Footer() {
             May the love and happiness last forever.
           </Link>
 
-          <span className="hidden sm:inline">
-            2025
-            {new Date().getFullYear() === 2025
-              ? null
-              : ` - ${new Date().getFullYear()}`}
-          </span>
+          <div className="flex items-center justify-center gap-4">
+            <span className="hidden sm:inline">
+              2025
+              {new Date().getFullYear() === 2025
+                ? null
+                : ` - ${new Date().getFullYear()}`}
+            </span>
+
+            <ThemeSelector />
+          </div>
         </div>
       </div>
     </footer>
