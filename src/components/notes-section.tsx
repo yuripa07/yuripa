@@ -8,10 +8,8 @@ export function NotesSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4 md:gap-y-2">
         <Link
           href="#"
-          className="flex items-center gap-4 px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
+          className="px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
         >
-          <div className="aspect-square h-10 w-10 bg-neutral-600 rounded-md"></div>
-
           <div className="overflow-hidden">
             <h3
               className="text-md font-semibold overflow-ellipsis whitespace-nowrap overflow-hidden"
@@ -29,10 +27,8 @@ export function NotesSection() {
 
         <Link
           href="#"
-          className="flex items-center gap-4 px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
+          className="px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
         >
-          <div className="aspect-square h-10 w-10 bg-neutral-600 rounded-md"></div>
-
           <div className="overflow-hidden">
             <h3
               className="text-md font-semibold overflow-ellipsis whitespace-nowrap overflow-hidden"
@@ -50,10 +46,8 @@ export function NotesSection() {
 
         <Link
           href="#"
-          className="flex items-center gap-4 px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
+          className="px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
         >
-          <div className="aspect-square h-10 w-10 bg-neutral-600 rounded-md"></div>
-
           <div className="overflow-hidden">
             <h3
               className="text-md font-semibold overflow-ellipsis whitespace-nowrap overflow-hidden"
@@ -71,10 +65,8 @@ export function NotesSection() {
 
         <Link
           href="#"
-          className="flex items-center gap-4 px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
+          className="px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
         >
-          <div className="aspect-square h-10 w-10 bg-neutral-600 rounded-md"></div>
-
           <div className="overflow-hidden">
             <h3
               className="text-md font-semibold overflow-ellipsis whitespace-nowrap overflow-hidden"
