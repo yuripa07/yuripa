@@ -11,9 +11,9 @@ export default function Home() {
       <main className="font-sans max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-24 flex flex-col gap-10 md:gap-18">
         <HeroSection />
 
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
 
-        <ServicesSection />
+        {/* <ServicesSection /> */}
 
         <NotesSection />
 
