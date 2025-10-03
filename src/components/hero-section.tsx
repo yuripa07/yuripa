@@ -28,7 +28,7 @@ export function HeroSection() {
           className="flex items-center gap-3 border border-paragraph/15 bg-transparent text-paragraph px-4 py-2 rounded-md font-normal text-sm hover:bg-foreground transition-colors duration-500"
         >
           <Mail size={18} />
-          <span className="font-semibold text-paragraph/90">Reach out</span>
+          <span className="font-semibold text-paragraph/90">Get in touch</span>
         </Link>
       </div>
     </section>
