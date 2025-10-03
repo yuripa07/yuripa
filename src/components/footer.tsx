@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Clock } from "./clock";
+import { CurrentlyStatus } from "./currently-status";
 
 export function Footer() {
   return (
@@ -161,8 +162,7 @@ export function Footer() {
 
         <div className="border-t border-b border-t-paragraph/10 py-10 border-b-paragraph/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col gap-4 sm:flex-row items-center justify-between w-full">
-            <p className="font-semibold">* Currently working</p>
-
+            <CurrentlyStatus />
             <Clock />
           </div>
         </div>
