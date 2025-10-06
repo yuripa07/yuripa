@@ -9,6 +9,7 @@ import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 export const myPortableTextComponents = {
   types: {
     // Renderizador para o tipo 'image'
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     image: ({ value }: { value: any }) => {
       if (!value?.asset?._ref) {
         return null;
@@ -27,6 +28,7 @@ export const myPortableTextComponents = {
       );
     },
     // Renderizador para o tipo 'codeBlock'
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     codeBlock: ({ value }: { value: any }) => {
       const { code, language, filename } = value;
       if (!code) {
