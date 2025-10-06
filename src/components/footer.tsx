@@ -14,7 +14,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Home
                 </Link>
@@ -22,7 +22,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   About me
                 </Link>
@@ -30,15 +30,15 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Projects
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  href="/notes"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Notes
                 </Link>
@@ -52,7 +52,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Landing page
                 </Link>
@@ -60,7 +60,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Website
                 </Link>
@@ -68,7 +68,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Software Development
                 </Link>
@@ -76,7 +76,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Web Design
                 </Link>
@@ -92,7 +92,7 @@ export function Footer() {
                   href="https://www.linkedin.com/in/yuripa/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   LinkedIn
                 </Link>
@@ -102,7 +102,7 @@ export function Footer() {
                   href="https://www.github.com/yuripa07/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   GitHub
                 </Link>
@@ -112,7 +112,7 @@ export function Footer() {
                   href="https://wa.me/+554488299154"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   WhatsApp
                 </Link>
@@ -122,7 +122,7 @@ export function Footer() {
                   href="mailto:yuripiresalves@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   E-mail
                 </Link>
@@ -136,7 +136,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Privacy Policy
                 </Link>
@@ -144,7 +144,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Terms of Service
                 </Link>
@@ -152,7 +152,7 @@ export function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-sm text-paragraph/70 hover:text-paragraph transition-colors duration-300"
+                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Cookie Policy
                 </Link>
@@ -173,7 +173,7 @@ export function Footer() {
             href="https://www.youtube.com/watch?v=dJ-Px0dZH8A"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-center text-balance hover:underline hover:underline-offset-3 hover:text-paragraph/70 transition-colors duration-500"
+            className="text-center text-balance hover:underline hover:underline-offset-3 hover:text-paragraph-secondary transition-colors duration-500"
           >
             May the love and happiness last forever.
           </Link>

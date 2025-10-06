@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="flex flex-col gap-2 max-w-2xl">
       <h1 className="text-5xl font-bold">Hello! I&apos;m Yuri.</h1>
 
-      <p className="text-lg text-paragraph/70 leading-normal">
+      <p className="text-lg text-paragraph-secondary leading-normal">
         Software Developer focused on building high-impact web solutions with
         modern technologies. I turn business challenges into efficient and
         scalable apps.

@@ -80,7 +80,7 @@ export function ThemeSelector() {
         className={`${buttonBaseClasses} ${
           theme === "system"
             ? "bg-paragraph/3 border border-paragraph/10 text-paragraph"
-            : "border border-transparent opacity-50 hover:opacity-100 text-paragraph/70"
+            : "border border-transparent opacity-50 hover:opacity-100 text-paragraph-secondary"
         }`}
         aria-label="Set theme to system preference"
       >
@@ -92,7 +92,7 @@ export function ThemeSelector() {
         className={`${buttonBaseClasses} ${
           theme === "light"
             ? "bg-paragraph/3 border border-paragraph/10 text-paragraph"
-            : "border border-transparent opacity-50 hover:opacity-100 text-paragraph/70"
+            : "border border-transparent opacity-50 hover:opacity-100 text-paragraph-secondary"
         }`}
         aria-label="Set light theme"
       >
@@ -104,7 +104,7 @@ export function ThemeSelector() {
         className={`${buttonBaseClasses} ${
           theme === "dark"
             ? "bg-paragraph/3 border border-paragraph/10 text-paragraph"
-            : "border border-transparent opacity-50 hover:opacity-100 text-paragraph/70"
+            : "border border-transparent opacity-50 hover:opacity-100 text-paragraph-secondary"
         }`}
         aria-label="Set dark theme"
       >

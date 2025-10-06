@@ -27,7 +27,7 @@ export function Clock() {
   }, []);
 
   return (
-    <span className="text-8xl text-paragraph/70">
+    <span className="text-8xl text-paragraph-secondary">
       {timeString !== null ? (
         timeString
       ) : (
