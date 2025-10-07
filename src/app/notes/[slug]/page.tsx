@@ -20,6 +20,18 @@ export default async function NotePage({
     options
   );
 
+  const publishedAt = new Date(post.publishedAt).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  // const updatedAt = new Date(post._updatedAt).toLocaleDateString("en-US", {
+  //   year: "numeric",
+  //   month: "long",
+  //   day: "numeric",
+  // });
+
   return (
     <>
       <main className="font-sans max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-24 flex flex-col gap-18">
@@ -40,10 +52,21 @@ export default async function NotePage({
           </div>
 
           <div className="flex flex-col gap-8 md:gap-10">
-            <h1 className="text-4xl font-bold mb-8">{post.title}</h1>
-            <p className="text-xl font-bold mb-8">{post.author._ref}</p>
+            <div className="flex flex-col gap-2">
+              <h1 className="text-4xl font-bold">{post.title}</h1>
+              <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                <p className="text-sm text-paragraph-secondary">
+                  Published: {publishedAt}
+                </p>
 
-            <p>Published: {new Date(post.publishedAt).toLocaleDateString()}</p>
+                {/* {post._updatedAt !== post.publishedAt && (
+                  <p className="text-sm text-paragraph-secondary">
+                    Updated: {updatedAt}
+                  </p>
+                )} */}
+              </div>
+            </div>
+
             <div className="prose md:prose-lg max-w-none">
               {Array.isArray(post.body) && (
                 <PortableText

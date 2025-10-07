@@ -31,7 +31,11 @@ export async function NotesSection() {
               </h3>
 
               <p className="text-sm text-paragraph-secondary overflow-ellipsis whitespace-nowrap overflow-hidden">
-                {new Date(post.publishedAt).toLocaleDateString()}
+                {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
               </p>
             </div>
           </Link>

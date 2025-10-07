@@ -16,13 +16,14 @@ export const myPortableTextComponents = {
       }
 
       const postImageUrl = value ? urlFor(value)?.url() : null;
+
       return (
         <Image
           src={postImageUrl!}
-          alt={value.alt || "Imagem do post"}
-          width={1920}
-          height={1080}
-          className="rounded-lg my-6"
+          alt={value.alt || "Note image"}
+          width={1024}
+          height={1024}
+          className="rounded-lg"
           // sizes="(max-width: 800px) 100vw, 800px"
         />
       );
