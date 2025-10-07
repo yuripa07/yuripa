@@ -24,7 +24,7 @@ export function ProjectsSection() {
           <div className="p-4">
             <h3 className="text-xl font-semibold mb-2">Project Title</h3>
 
-            <p className="text-sm text-paragraph/70">
+            <p className="text-sm text-paragraph-secondary">
               Brief description of the project goes here.
             </p>
           </div>
@@ -47,7 +47,7 @@ export function ProjectsSection() {
           <div className="p-4">
             <h3 className="text-xl font-semibold mb-2">Project Title</h3>
 
-            <p className="text-sm text-paragraph/70">
+            <p className="text-sm text-paragraph-secondary">
               Brief description of the project goes here.
             </p>
           </div>

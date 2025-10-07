@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="flex flex-col gap-2 max-w-2xl">
       <h1 className="text-5xl font-bold">Hello! I&apos;m Yuri.</h1>
 
-      <p className="text-lg text-paragraph/70 leading-normal">
+      <p className="text-lg text-paragraph-secondary leading-normal">
         Software Developer focused on building high-impact web solutions with
         modern technologies. I turn business challenges into efficient and
         scalable apps.
@@ -20,7 +20,7 @@ export function HeroSection() {
           About me
         </Link>
         <Link
-          href="mailto:yuripiresalves@gmail.com"
+          href="mailto:hello@yuripa.com"
           className="flex items-center gap-3 border border-paragraph/15 bg-transparent text-paragraph px-4 py-2 rounded-md font-normal text-sm hover:bg-foreground transition-colors duration-500"
         >
           <Mail size={18} />

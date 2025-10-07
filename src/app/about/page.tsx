@@ -30,7 +30,7 @@ export default function AboutPage() {
               </h1>
 
               <div className="flex flex-col gap-3 md:gap-4">
-                <p className="text-base md:text-lg text-paragraph/70 leading-normal">
+                <p className="text-base md:text-lg text-paragraph-secondary leading-normal">
                   As a Software Developer, I&apos;m passionate about
                   transforming complex challenges into efficient, high-impact
                   web solutions. With a full-stack background in technologies
@@ -38,7 +38,7 @@ export default function AboutPage() {
                   maintaining robust platforms, from B2B commercial portals to
                   systems for the banking sector.
                 </p>
-                <p className="text-base md:text-lg text-paragraph/70 leading-normal">
+                <p className="text-base md:text-lg text-paragraph-secondary leading-normal">
                   Beyond the world of code, I have a deep appreciation for music
                   and enjoy playing the guitar in my free time. I&apos;m also an
                   volleyball fan and love watching matches. My curiosity extends
@@ -76,16 +76,16 @@ export default function AboutPage() {
                             className="md:hidden group-hover:block"
                           />
                         </h3>
-                        <span className="text-paragraph/70 text-sm">
+                        <span className="text-paragraph-secondary text-sm">
                           Maringá, Brazil
                         </span>
-                        <span className="text-paragraph/70 text-sm sm:hidden">
+                        <span className="text-paragraph-secondary text-sm sm:hidden">
                           Feb 2025 - Present
                         </span>
                       </div>
                     </Link>
 
-                    <span className="text-paragraph/70 italic text-sm hidden sm:inline">
+                    <span className="text-paragraph-secondary italic text-sm hidden sm:inline">
                       Feb 2025 - Present
                     </span>
                   </div>
@@ -93,7 +93,7 @@ export default function AboutPage() {
                   <div className="flex flex-col gap-1.5">
                     <h4 className="font-semibold">Software Developer</h4>
 
-                    <p className="text-paragraph/70 leading-relaxed">
+                    <p className="text-paragraph-secondary leading-relaxed">
                       As a Software Developer, I work on a high-impact B2B
                       import portal, where I&apos;ve taken on full-stack
                       responsibilities to ensure the platform remains stable and
@@ -139,16 +139,16 @@ export default function AboutPage() {
                             className="md:hidden group-hover:block"
                           />
                         </h3>
-                        <span className="text-paragraph/70 text-sm">
+                        <span className="text-paragraph-secondary text-sm">
                           Maringá, Brazil
                         </span>
-                        <span className="text-paragraph/70 text-sm sm:hidden">
+                        <span className="text-paragraph-secondary text-sm sm:hidden">
                           Apr 2021 - Feb 2025
                         </span>
                       </div>
                     </Link>
 
-                    <span className="text-paragraph/70 italic text-sm hidden sm:inline">
+                    <span className="text-paragraph-secondary italic text-sm hidden sm:inline">
                       Apr 2021 - Feb 2025
                     </span>
                   </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
                       Full-stack Developer Intern
                     </h4> */}
 
-                    <p className="text-paragraph/70 leading-relaxed">
+                    <p className="text-paragraph-secondary leading-relaxed">
                       As a member of PET-Informática, I engaged in activities
                       that bridged the gap between the university and the
                       community. I was deeply involved in organizing our main
@@ -204,16 +204,16 @@ export default function AboutPage() {
                             className="md:hidden group-hover:block"
                           />
                         </h3>
-                        <span className="text-paragraph/70 text-sm">
+                        <span className="text-paragraph-secondary text-sm">
                           Remote
                         </span>
-                        <span className="text-paragraph/70 text-sm sm:hidden">
+                        <span className="text-paragraph-secondary text-sm sm:hidden">
                           Nov 2021 - Jul 2022
                         </span>
                       </div>
                     </Link>
 
-                    <span className="text-paragraph/70 italic text-sm hidden sm:inline">
+                    <span className="text-paragraph-secondary italic text-sm hidden sm:inline">
                       Nov 2021 - Jul 2022
                     </span>
                   </div>
@@ -223,7 +223,7 @@ export default function AboutPage() {
                       Full-stack Developer Intern
                     </h4>
 
-                    <p className="text-paragraph/70 leading-relaxed">
+                    <p className="text-paragraph-secondary leading-relaxed">
                       During my internship at Cadmus, I was actively involved in
                       developing a large-scale portal for the banking sector,
                       built on a micro-frontend architecture. As a Full-stack
@@ -267,16 +267,16 @@ export default function AboutPage() {
                             className="md:hidden group-hover:block"
                           />
                         </h3>
-                        <span className="text-paragraph/70 text-sm">
+                        <span className="text-paragraph-secondary text-sm">
                           Maringá, Brazil
                         </span>
-                        <span className="text-paragraph/70 text-sm sm:hidden">
+                        <span className="text-paragraph-secondary text-sm sm:hidden">
                           Jul 2021 - Nov 2021
                         </span>
                       </div>
                     </Link>
 
-                    <span className="text-paragraph/70 italic text-sm hidden sm:inline">
+                    <span className="text-paragraph-secondary italic text-sm hidden sm:inline">
                       Jul 2021 - Nov 2021
                     </span>
                   </div>
@@ -286,7 +286,7 @@ export default function AboutPage() {
                       Front-end Developer Intern
                     </h4>
 
-                    <p className="text-paragraph/70 leading-relaxed">
+                    <p className="text-paragraph-secondary leading-relaxed">
                       My journey at VG Educacional started with a focus on
                       front-end development and user experience. I collaborated
                       on the conception and initial development of a new
@@ -327,16 +327,16 @@ export default function AboutPage() {
                         <h3 className="font-semibold">
                           Universidade Estadual de Maringá
                         </h3>
-                        <span className="text-paragraph/70 text-sm">
+                        <span className="text-paragraph-secondary text-sm">
                           Maringá, Brazil
                         </span>
-                        <span className="text-paragraph/70 text-sm sm:hidden">
+                        <span className="text-paragraph-secondary text-sm sm:hidden">
                           Aug 2020 - Feb 2025
                         </span>
                       </div>
                     </div>
 
-                    <span className="text-paragraph/70 italic text-sm hidden sm:inline">
+                    <span className="text-paragraph-secondary italic text-sm hidden sm:inline">
                       Aug 2020 - Feb 2025
                     </span>
                   </div>
@@ -346,7 +346,7 @@ export default function AboutPage() {
                       Bachelor&apos;s degree, Informatics
                     </h4>
 
-                    <p className="text-paragraph/70 leading-relaxed">
+                    <p className="text-paragraph-secondary leading-relaxed">
                       My B.S. in Informatics provided a strong foundation in
                       software engineering principles, algorithms, and systems
                       architecture. Beyond the core curriculum, my academic

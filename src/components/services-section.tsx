@@ -26,7 +26,7 @@ export function ServicesSection() {
           <div>
             <h3 className="text-md font-semibold">Landing Page</h3>
 
-            <p className="text-sm text-paragraph/70">
+            <p className="text-sm text-paragraph-secondary">
               Brief description of the project goes here.
             </p>
           </div>
@@ -48,7 +48,7 @@ export function ServicesSection() {
               Software Development
             </h3>
 
-            <p className="text-sm text-paragraph/70">
+            <p className="text-sm text-paragraph-secondary">
               Brief description of the project goes here.
             </p>
           </div>
@@ -68,7 +68,7 @@ export function ServicesSection() {
           <div>
             <h3 className="text-md font-semibold">Website</h3>
 
-            <p className="text-sm text-paragraph/70">
+            <p className="text-sm text-paragraph-secondary">
               Brief description of the project goes here.
             </p>
           </div>
@@ -90,7 +90,7 @@ export function ServicesSection() {
               Web Design
             </h3>
 
-            <p className="text-sm text-paragraph/70">
+            <p className="text-sm text-paragraph-secondary">
               Brief description of the project goes here.
             </p>
           </div>
