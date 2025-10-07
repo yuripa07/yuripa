@@ -20,7 +20,7 @@ export function HeroSection() {
           About me
         </Link>
         <Link
-          href="mailto:yuripiresalves@gmail.com"
+          href="mailto:hello@yuripa.com"
           className="flex items-center gap-3 border border-paragraph/15 bg-transparent text-paragraph px-4 py-2 rounded-md font-normal text-sm hover:bg-foreground transition-colors duration-500"
         >
           <Mail size={18} />

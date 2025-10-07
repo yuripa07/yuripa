@@ -119,7 +119,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="mailto:yuripiresalves@gmail.com"
+                  href="mailto:hello@yuripa.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
