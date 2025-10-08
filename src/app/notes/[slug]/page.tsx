@@ -1,11 +1,32 @@
-import { PortableText, type SanityDocument } from "next-sanity";
+import { PortableText, PortableTextBlock } from "next-sanity";
 import { client } from "@/lib/sanity";
 import Link from "next/link";
 import { Footer } from "@/components/footer";
 import { MoveLeft } from "lucide-react";
 import { myPortableTextComponents } from "@/components/portable-text-components";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
-const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
+const options = { next: { revalidate: 30 } };
+
+export interface Post {
+  _id: string;
+  title: string;
+  slug: string;
+  publishedAt: string;
+  body: PortableTextBlock[];
+  author: {
+    name: string;
+    slug: string;
+    image: SanityImageSource;
+  };
+  categories: {
+    _id: string;
+    title: string;
+  }[];
+}
+
+async function getPost(slug: string): Promise<Post> {
+  const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   ...,
   "author": author->{
     name,
@@ -18,23 +39,8 @@ const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   }
 }`;
 
-const options = { next: { revalidate: 30 } };
-
-export interface Post {
-  _id: string;
-  title: string;
-  slug: string;
-  publishedAt: string;
-  body: never[]; // Ou um tipo mais específico para Portable Text
-  author: {
-    name: string;
-    slug: string;
-    image: unknown; // Objeto de imagem do Sanity
-  };
-  categories: {
-    _id: string;
-    title: string;
-  }[];
+  const post = await client.fetch(POST_QUERY, { slug }, options);
+  return post;
 }
 
 export default async function NotePage({
@@ -42,11 +48,7 @@ export default async function NotePage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const post: Post = await client.fetch<Post>(
-    POST_QUERY,
-    await params,
-    options
-  );
+  const post: Post = await getPost((await params).slug);
 
   const publishedAt = new Date(post.publishedAt).toLocaleDateString("en-US", {
     year: "numeric",
