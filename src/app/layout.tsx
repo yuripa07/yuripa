@@ -15,7 +15,7 @@ const ubuntuSans = Ubuntu_Sans({
 export const metadata: Metadata = {
   title: "YURiPA",
   description:
-    "Software Developer focused on building high-impact web solutions with modern technologies. I turn business challenges into efficient and scalable apps.",
+    "Software Developer focused on building high-impact web solutions with modern technologies.",
   keywords:
     "Software Developer, Software, Developer, Yuri, Yuri Pires Alves, Yuri Alves, Yuri Pires, yuripa, YURiPA, yuripa07, React, Frontend, Front-end, React, ReactJS, Next, Next.js, Node, Node.js, TypeScript, JavaScript, HTML, CSS, Web Design, Design, Web Developer, Desenvolvedor de Software, Desenvolvedor, Programador, App, Aplicativo, Landing Page, Site, Website, Maringá, Paraná, Maringá Paraná, Brasil, Brazil",
 };
