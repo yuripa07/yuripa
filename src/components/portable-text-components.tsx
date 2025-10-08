@@ -1,4 +1,3 @@
-// components/PortableTextComponents.tsx
 import { urlFor } from "@/lib/sanity";
 import Image from "next/image";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -8,7 +7,6 @@ import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 // O objeto 'components' que ensina o <PortableText> como renderizar cada tipo
 export const myPortableTextComponents = {
   types: {
-    // Renderizador para o tipo 'image'
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     image: ({ value }: { value: any }) => {
       if (!value?.asset?._ref) {
@@ -17,18 +15,38 @@ export const myPortableTextComponents = {
 
       const postImageUrl = value ? urlFor(value)?.url() : null;
 
+      const { size = "full", alignment = "center" } = value;
+
+      const sizeClasses = {
+        small: "max-w-sm",
+        medium: "max-w-lg",
+        full: "w-full",
+      };
+
+      const alignmentClasses = {
+        left: "mr-auto",
+        center: "mx-auto",
+        right: "ml-auto",
+      };
+
+      const containerClasses = `
+        my-6
+        ${sizeClasses[size as keyof typeof sizeClasses] || sizeClasses.full}
+        ${alignmentClasses[alignment as keyof typeof alignmentClasses] || alignmentClasses.center}
+      `;
+
       return (
-        <Image
-          src={postImageUrl!}
-          alt={value.alt || "Note image"}
-          width={1024}
-          height={1024}
-          className="rounded-lg"
-          // sizes="(max-width: 800px) 100vw, 800px"
-        />
+        <div className={containerClasses}>
+          <Image
+            src={postImageUrl!}
+            alt={value.alt || "Note image"}
+            width={1024}
+            height={1024}
+            className="rounded-lg"
+          />
+        </div>
       );
     },
-    // Renderizador para o tipo 'codeBlock'
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     codeBlock: ({ value }: { value: any }) => {
       const { code, language, filename } = value;
@@ -45,7 +63,7 @@ export const myPortableTextComponents = {
           <SyntaxHighlighter
             language={language || "text"}
             style={atomDark}
-            showLineNumbers // Opcional: mostrar números de linha
+            showLineNumbers
             customStyle={{
               padding: "1.25rem",
               margin: "0",

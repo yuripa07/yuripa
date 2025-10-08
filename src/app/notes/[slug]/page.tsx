@@ -5,16 +5,44 @@ import { Footer } from "@/components/footer";
 import { MoveLeft } from "lucide-react";
 import { myPortableTextComponents } from "@/components/portable-text-components";
 
-const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`;
+const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
+  ...,
+  "author": author->{
+    name,
+    "slug": slug.current,
+    image
+  },
+  "categories": categories[]->{
+    _id,
+    title
+  }
+}`;
 
 const options = { next: { revalidate: 30 } };
+
+export interface Post {
+  _id: string;
+  title: string;
+  slug: string;
+  publishedAt: string;
+  body: never[]; // Ou um tipo mais específico para Portable Text
+  author: {
+    name: string;
+    slug: string;
+    image: unknown; // Objeto de imagem do Sanity
+  };
+  categories: {
+    _id: string;
+    title: string;
+  }[];
+}
 
 export default async function NotePage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const post = await client.fetch<SanityDocument>(
+  const post: Post = await client.fetch<Post>(
     POST_QUERY,
     await params,
     options
@@ -53,11 +81,26 @@ export default async function NotePage({
 
           <div className="flex flex-col gap-8 md:gap-10">
             <div className="flex flex-col gap-2">
+              {post.categories?.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {post.categories.map((category) => (
+                    <span
+                      key={category._id}
+                      className="bg-foreground border border-paragraph/10 text-paragraph/80 text-xs font-medium px-3 py-1 rounded-lg mb-1"
+                    >
+                      {category.title}
+                    </span>
+                  ))}
+                </div>
+              )}
               <h1 className="text-4xl font-bold">{post.title}</h1>
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                 <p className="text-sm text-paragraph-secondary">
                   Published: {publishedAt}
                 </p>
+                {/* <p className="text-sm text-paragraph-secondary">
+                  {post.author.name}
+                </p> */}
 
                 {/* {post._updatedAt !== post.publishedAt && (
                   <p className="text-sm text-paragraph-secondary">
