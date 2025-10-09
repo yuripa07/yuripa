@@ -21,12 +21,10 @@ export async function NotesSection() {
             key={post._id}
             href={`/notes/${post.slug.current}`}
             className="px-3 py-3 rounded-lg border md:border-transparent md:bg-transparent border-paragraph/7 bg-foreground hover:border-paragraph/7 hover:bg-foreground transition-colors duration-500"
+            title={post.title}
           >
             <div className="overflow-hidden">
-              <h3
-                className="text-md font-semibold overflow-ellipsis whitespace-nowrap overflow-hidden"
-                title={post.title}
-              >
+              <h3 className="text-md font-semibold overflow-ellipsis whitespace-nowrap overflow-hidden">
                 {post.title}
               </h3>
 
