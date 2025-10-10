@@ -135,7 +135,7 @@ export function Footer() {
             <ul className="flex flex-col gap-2">
               <li>
                 <Link
-                  href="#"
+                  href="/privacy-policy"
                   className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Privacy Policy
@@ -143,18 +143,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="terms-of-service"
                   className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
                 >
                   Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-sm text-paragraph-secondary hover:text-paragraph transition-colors duration-300"
-                >
-                  Cookie Policy
                 </Link>
               </li>
             </ul>

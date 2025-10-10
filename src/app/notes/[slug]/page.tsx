@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { MoveLeft } from "lucide-react";
 import { myPortableTextComponents } from "@/components/portable-text-components";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { notFound } from "next/navigation";
 
 const options = { next: { revalidate: 30 } };
 
@@ -49,6 +50,10 @@ export default async function NotePage({
   params: Promise<{ slug: string }>;
 }) {
   const post: Post = await getPost((await params).slug);
+
+  if (!post) {
+    notFound();
+  }
 
   const publishedAt = new Date(post.publishedAt).toLocaleDateString("en-US", {
     year: "numeric",
